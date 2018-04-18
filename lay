@@ -1,0 +1,17 @@
+#!/bin/bash
+set -e
+
+VERSION=0.2
+INSTALL_DIR=""
+if [ "$#" -ne 1 ]; then
+    echo "GNU lay version ${VERSION}, project scaffolding tool. BW@2018"
+    echo "    Syntax: lay <project-name>"
+else
+    mkdir -p $1
+    cd $1
+    touch .gitignore README.md run commit todo
+    git init  &> /dev/null
+    git add --all  &> /dev/null
+    git commit -m "Initial project commit with Lay" &> /dev/null
+    cd
+fi
