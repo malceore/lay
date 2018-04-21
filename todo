@@ -1,0 +1,6 @@
+lay - Generic scaffolding for myself.
+
+1. Function that take a name, creates a directory and git inits it.
+2. then adds: .gitignore, README.md, run, commit, replacing title in readme with project title title.
+3. Git adds everything and does initial project creation commit.
+4. Jump? Shortcut? Tab completion?
